@@ -2,24 +2,27 @@
 {
     internal class Saudacao
     {
-        public static void ExibirSaudacao()
+        /// <summary>
+        /// Metodo para exibir uma saudação ao usuario.
+        /// </summary>
+        public void ExibirSaudacao(string usuario)
         {
             DateTime horaAtual = DateTime.Now;
             string msg;
 
             if (horaAtual < DateTime.Parse("12:00"))
             {
-                msg = "Bom dia!";
+                msg = $"Bom dia! {usuario}";
             }
             else if (horaAtual < DateTime.Parse("18:00"))
             {
-                msg = "Boa Tarde!";
+                msg = $"Boa Tarde! {usuario}";
             }
             else 
             {
-                msg = "Boa noite";
+                msg = $"Boa noite {usuario}";
             }
-            Console.WriteLine($"{msg} Eduardo! bons estudos.");
+            Console.WriteLine(msg + " bons estudos.");
         }
     }
 }
