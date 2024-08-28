@@ -1,13 +1,9 @@
-﻿using MentoriaCSharp.Fundamentos.Fundamentos.Modulo._1;
-using MentoriaCSharp.Fundamentos.Mensageria;
+﻿
+using MentoriaCSharp.Fundamentos.Fundamentos.Modulo._1;
 
-// Criar objeto para ter as opções dele.
-// Para criar o objeto criamos uma instancia.
-// TipoDoObjeto nomeDoObjeto = new TipoDoObjeto()
+Metodos metodos = new Metodos();
 
-// nomeDoObjeto.Opções.
-
-
+metodos.ExemploMetodoComParametros("Maria",45);
 
 
 
